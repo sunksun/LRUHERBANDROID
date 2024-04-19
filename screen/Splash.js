@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, Image, Pressable, StyleSheet, View } from 'react-native'
+import { Text, Image, Pressable, StyleSheet, View, ScrollView } from 'react-native'
 
 const Splash = ({navigation}) => {
     const onPress = () => {

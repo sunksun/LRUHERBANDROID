@@ -4,7 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Splash from './screen/Splash';
 import Herb from './screen/Herb';
-import Detail from './screen/Detail';
+import Item1 from './screen/Item1';
 
 const Stack = createNativeStackNavigator();
 
@@ -20,12 +20,12 @@ const App = () => {
         <Stack.Screen
           name="Herb"
           component={Herb}
-          options={{title: 'Herb'}}
+          options={{title: 'สมุนไพร'}}
         />
         <Stack.Screen
-          name="Detail"
-          component={Detail}
-          options={{title: 'Detail'}}
+          name="Item1"
+          component={Item1}
+          options={{title: 'แฝกหอม'}}
         />
       </Stack.Navigator>
     </NavigationContainer>
