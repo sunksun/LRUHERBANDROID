@@ -4,9 +4,9 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Splash from './screen/Splash';
 import Herb from './screen/Herb';
-import Item1 from './screen/Item1';
 import Farmer from './screen/Farmer';
 import Source from './screen/Source';
+import Detail from './screen/Detail';
 
 const Stack = createNativeStackNavigator();
 
@@ -35,9 +35,9 @@ const App = () => {
         options={{title: 'ปราชญ์ชาวบ้าน'}}
         />
         <Stack.Screen
-          name="Item1"
-          component={Item1}
-          options={{title: 'สมุนไพรท้องถิ่นไทเลย'}}
+          name="Detail"
+          component={Detail}
+          options={{title: 'Detail'}}
         />
       </Stack.Navigator>
     </NavigationContainer>

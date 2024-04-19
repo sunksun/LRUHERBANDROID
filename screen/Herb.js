@@ -8,6 +8,12 @@ const Herb = ({navigation}) => {
   const onPressItem1 = () => {
     navigation.navigate('Item1')
   }
+  const onPress_Herb1 = () => {
+    navigation.navigate('Herb1')
+}
+const onPress_Herb2 = () => {
+  navigation.navigate('Herb2')
+}
   return (
     <ScrollView>
       <View style={{ height: "100%", alignItems: "center", backgroundColor: "#ffffff" }}>
@@ -20,7 +26,11 @@ const Herb = ({navigation}) => {
         <Pressable onPress={() => onPressItem(1, 'แฝกหอม')}>
         <View style={styles.row}>
           <View style={{flex: 1}} >
+
             <Image source={require('../img/img-1.jpg')} style={[styles.image100, { marginRight: 0 }]} />
+          <Pressable onPress={onPress_Herb1}>
+            <Image source={require('../img/img-1.jpg')} style={[styles.image120, { marginRight: 0 }]} />
+          </Pressable>
           </View>
           <View style={{flex: 2}} >
             <Text style={{ fontSize: 14, fontWeight: 'bold' }}>แฝกหอม</Text>
@@ -34,6 +44,9 @@ const Herb = ({navigation}) => {
         <View style={styles.row}>
           <View style={{flex: 1}} >
             <Image source={require('../img/img-2.jpg')} style={[styles.image100, { marginRight: 10 }]} />
+          <Pressable onPress={onPress_Herb2}>
+            <Image source={require('../img/img-2.jpg')} style={[styles.image120, { marginRight: 10 }]} />
+          </Pressable>
           </View>
           <View style={{flex: 2}} >
             <Text style={{ fontSize: 14, fontWeight: 'bold' }}>โด่ไม่รู้ล้ม</Text>
