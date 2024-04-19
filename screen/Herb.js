@@ -2,9 +2,12 @@ import { View, Text, ScrollView, Image, StyleSheet, Pressable } from 'react-nati
 import React from 'react'
 
 const Herb = ({navigation}) => {
-  const onPressItem = (id, name) => {
-    navigation.navigate('Detail', { id: id, name: name })
-  }
+  const onPress_Herb1 = () => {
+    navigation.navigate('Herb1')
+}
+const onPress_Herb2 = () => {
+  navigation.navigate('Herb2')
+}
   return (
     <ScrollView style={{ padding: 10 }}>
       <View style={{ height: "100%", alignItems: "center", backgroundColor: "#ffffff" }}>
@@ -16,7 +19,9 @@ const Herb = ({navigation}) => {
         </View>
         <View style={{ flexDirection: 'row', height: 100, padding: 10, width: "100%" }}>
           <View style={{flex: 1}} >
+          <Pressable onPress={onPress_Herb1}>
             <Image source={require('../img/img-1.jpg')} style={[styles.image120, { marginRight: 0 }]} />
+          </Pressable>
           </View>
           <View style={{flex: 2}} >
             <Text style={{ fontSize: 14, fontWeight: 'bold' }}>แฝกหอม</Text>
@@ -27,7 +32,9 @@ const Herb = ({navigation}) => {
         </View>
         <View style={{ flexDirection: 'row', height: 100, padding: 10, width: "100%" }}>
           <View style={{flex: 1}} >
+          <Pressable onPress={onPress_Herb2}>
             <Image source={require('../img/img-2.jpg')} style={[styles.image120, { marginRight: 10 }]} />
+          </Pressable>
           </View>
           <View style={{flex: 2}} >
             <Text style={{ fontSize: 12, fontWeight: 'bold' }}>โด่ไม่รู้ล้ม</Text>
