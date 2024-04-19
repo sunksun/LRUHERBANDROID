@@ -20,11 +20,8 @@ const onPress3 = () => {
           <Text style={{ color: "white", fontSize: 24 }}>สมุนไพรท้องถิ่นไทเลย</Text>
         </View>
         <View style={styles.middle} >
+          <Pressable onPress={onPress1}>
           <Image source={require('../img/cover_01.jpg')} style={styles.image390} />
-        </View>
-        <View style={styles.grid} >
-          <Pressable onPress={onPress}>
-            <Image source={require('../img/herbs-spices-set.jpg')} style={[styles.image120, { marginRight: 10 }]} />
           </Pressable>
         </View>
         <View style={styles.bottom} >
