@@ -2,6 +2,9 @@ import { View, Text, ScrollView, Image, StyleSheet, Pressable } from 'react-nati
 import React from 'react'
 
 const Herb = ({navigation}) => {
+  const onPressItem = (id, name) => {
+    navigation.navigate('Item1', { id: id, name: name })
+  }
   const onPressItem1 = () => {
     navigation.navigate('Item1')
   }
@@ -14,7 +17,7 @@ const Herb = ({navigation}) => {
               สมุนไพรท้องถิ่น
             </Text>
         </View>
-        <Pressable onPress={onPressItem1}>
+        <Pressable onPress={() => onPressItem(1, 'แฝกหอม')}>
         <View style={styles.row}>
           <View style={{flex: 1}} >
             <Image source={require('../img/img-1.jpg')} style={[styles.image100, { marginRight: 0 }]} />
@@ -27,7 +30,7 @@ const Herb = ({navigation}) => {
           </View>
         </View>
         </Pressable>
-        <Pressable onPress={onPressItem1}>
+        <Pressable onPress={() => onPressItem(2, 'โด่ไม่รู้ล้ม')}>
         <View style={styles.row}>
           <View style={{flex: 1}} >
             <Image source={require('../img/img-2.jpg')} style={[styles.image100, { marginRight: 10 }]} />
@@ -40,7 +43,7 @@ const Herb = ({navigation}) => {
           </View>
         </View>
         </Pressable>
-        <Pressable onPress={onPressItem1}>
+        <Pressable onPress={() => onPressItem(3, 'ป่าช้าหมอง')}>
         <View style={styles.row}>
           <View style={{flex: 1}} >
             <Image source={require('../img/img-3.jpg')} style={[styles.image100, { marginRight: 10 }]} />
@@ -53,7 +56,7 @@ const Herb = ({navigation}) => {
           </View>
         </View>
         </Pressable>
-        <Pressable onPress={onPressItem1}>
+        <Pressable onPress={() => onPressItem(4, 'กำแพงเจ็ดชั้น')}>
         <View style={styles.row}>
           <View style={{flex: 1}} >
             <Image source={require('../img/img-4.jpg')} style={[styles.image100, { marginRight: 10 }]} />
@@ -66,7 +69,7 @@ const Herb = ({navigation}) => {
           </View>
         </View>
         </Pressable>
-        <Pressable onPress={onPressItem1}>
+        <Pressable onPress={() => onPressItem(5, 'เอื้องหมายนา')}>
         <View style={styles.row}>
           <View style={{flex: 1}} >
             <Image source={require('../img/img-5.jpg')} style={[styles.image100, { marginRight: 10 }]} />
@@ -79,7 +82,7 @@ const Herb = ({navigation}) => {
           </View>
         </View>
         </Pressable>
-        <Pressable onPress={onPressItem1}>
+        <Pressable onPress={() => onPressItem(6, 'หญ้าแห้วหมู')}>
         <View style={styles.row}>
           <View style={{flex: 1}} >
             <Image source={require('../img/img-6.jpg')} style={styles.image100} />
@@ -92,7 +95,7 @@ const Herb = ({navigation}) => {
           </View>
         </View>
         </Pressable>
-        <Pressable onPress={onPressItem1}>
+        <Pressable onPress={() => onPressItem(7, 'เปล้าใหญ่')}>
         <View style={styles.row}>
           <View style={{flex: 1}} >
             <Image source={require('../img/img-7.jpg')} style={styles.image100} />
@@ -105,7 +108,7 @@ const Herb = ({navigation}) => {
           </View>
         </View>
         </Pressable>
-        <Pressable onPress={onPressItem1}>
+        <Pressable onPress={() => onPressItem(8, 'หญ้างวงช้าง')}>
         <View style={styles.row}>
           <View style={{flex: 1}} >
             <Image source={require('../img/img-8.jpg')} style={styles.image100} />
@@ -118,7 +121,7 @@ const Herb = ({navigation}) => {
           </View>
         </View>
         </Pressable>
-        <Pressable onPress={onPressItem1}>
+        <Pressable onPress={() => onPressItem(9, 'กระบก')}>
         <View style={styles.row}>
           <View style={{flex: 1}} >
             <Image source={require('../img/img-9.jpg')} style={styles.image100} />
@@ -131,7 +134,7 @@ const Herb = ({navigation}) => {
           </View>
         </View>
         </Pressable>
-        <Pressable onPress={onPressItem1}>
+        <Pressable onPress={() => onPressItem(10, 'อัคคีทวาร')}>
         <View style={styles.row}>
           <View style={{flex: 1}} >
             <Image source={require('../img/img-10.jpg')} style={styles.image100} />
@@ -144,7 +147,7 @@ const Herb = ({navigation}) => {
           </View>
         </View>
         </Pressable>
-        <Pressable onPress={onPressItem1}>
+        <Pressable onPress={() => onPressItem(11, 'กระตังใบ')}>
         <View style={styles.row}>
           <View style={{flex: 1}} >
             <Image source={require('../img/img-11.jpg')} style={styles.image100} />
@@ -157,7 +160,7 @@ const Herb = ({navigation}) => {
           </View>
         </View>
         </Pressable>
-        <Pressable onPress={onPressItem1}>
+        <Pressable onPress={() => onPressItem(12, 'กระโดน')}>
         <View style={styles.row}>
           <View style={{flex: 1}} >
             <Image source={require('../img/img-12.jpg')} style={styles.image100} />
@@ -170,7 +173,7 @@ const Herb = ({navigation}) => {
           </View>
         </View>
         </Pressable>
-        <Pressable onPress={onPressItem1}>
+        <Pressable onPress={() => onPressItem(13, 'ตูมกา')}>
         <View style={styles.row}>
           <View style={{flex: 1}} >
             <Image source={require('../img/img-13.jpg')} style={styles.image100} />
@@ -183,7 +186,7 @@ const Herb = ({navigation}) => {
           </View>
         </View>
         </Pressable>
-        <Pressable onPress={onPressItem1}>
+        <Pressable onPress={() => onPressItem(14, 'ช้างน้าว')}>
         <View style={styles.row}>
           <View style={{flex: 1}} >
             <Image source={require('../img/img-14.jpg')} style={styles.image100} />
@@ -196,7 +199,7 @@ const Herb = ({navigation}) => {
           </View>
         </View>
         </Pressable>
-        <Pressable onPress={onPressItem1}>
+        <Pressable onPress={() => onPressItem(15, 'ส่องฟ้า')}>
         <View style={styles.row}>
           <View style={{flex: 1}} >
             <Image source={require('../img/img-15.jpg')} style={styles.image100} />
@@ -209,7 +212,7 @@ const Herb = ({navigation}) => {
           </View>
         </View>
         </Pressable>
-        <Pressable onPress={onPressItem1}>
+        <Pressable onPress={() => onPressItem(16, 'ตูดหมูตูดหมา')}>
         <View style={styles.row}>
           <View style={{flex: 1}} >
             <Image source={require('../img/img-16.jpg')} style={styles.image100} />
@@ -222,7 +225,7 @@ const Herb = ({navigation}) => {
           </View>
         </View>
         </Pressable>
-        <Pressable onPress={onPressItem1}>
+        <Pressable onPress={() => onPressItem(17, 'มะคังแดง')}>
         <View style={styles.row}>
           <View style={{flex: 1}} >
             <Image source={require('../img/img-17.jpg')} style={styles.image100} />
@@ -235,7 +238,7 @@ const Herb = ({navigation}) => {
           </View>
         </View>
         </Pressable>
-        <Pressable onPress={onPressItem1}>
+        <Pressable onPress={() => onPressItem(18, 'คำมอกหลวง')}>
         <View style={styles.row}>
           <View style={{flex: 1}} >
             <Image source={require('../img/img-18.jpg')} style={styles.image100} />
@@ -248,7 +251,7 @@ const Herb = ({navigation}) => {
           </View>
         </View>
         </Pressable>
-        <Pressable onPress={onPressItem1}>
+        <Pressable onPress={() => onPressItem(19, 'สีดาโคก ไข่เน่าน้ย')}>
         <View style={styles.row}>
           <View style={{flex: 1}} >
             <Image source={require('../img/img-19.jpg')} style={styles.image100} />
@@ -261,7 +264,7 @@ const Herb = ({navigation}) => {
           </View>
         </View>
         </Pressable>
-        <Pressable onPress={onPressItem1}>
+        <Pressable onPress={() => onPressItem(20, 'ยอป่า')}>
         <View style={styles.row}>
           <View style={{flex: 1}} >
             <Image source={require('../img/img-20.jpg')} style={styles.image100} />
@@ -274,7 +277,7 @@ const Herb = ({navigation}) => {
           </View>
         </View>
         </Pressable>
-        <Pressable onPress={onPressItem1}>
+        <Pressable onPress={() => onPressItem(21, 'กระทุ่มนา')}>
         <View style={styles.row}>
           <View style={{flex: 1}} >
             <Image source={require('../img/img-21.jpg')} style={styles.image100} />
@@ -284,6 +287,84 @@ const Herb = ({navigation}) => {
             <Text style={{ fontSize: 14 }}>ชื่อวิทยาศาสตร์ : </Text>
             <Text style={{ fontSize: 14, fontStyle: 'italic'  }}>Mitragyna hirsuta Havil.</Text>
             <Text style={{ fontSize: 12 }}>วงศ์ : Rubiaceae</Text>
+          </View>
+        </View>
+        </Pressable>
+        <Pressable onPress={() => onPressItem(22, 'เหมือดคน')}>
+        <View style={styles.row}>
+          <View style={{flex: 1}} >
+            <Image source={require('../img/img-22.jpg')} style={styles.image100} />
+          </View>
+          <View style={{flex: 2}} >
+            <Text style={{ fontSize: 14, fontWeight: 'bold' }}>เหมือดคน</Text>
+            <Text style={{ fontSize: 14 }}>ชื่อวิทยาศาสตร์ : </Text>
+            <Text style={{ fontSize: 14, fontStyle: 'italic'  }}>Scleropyrum pentandrum (Dennst.) Mabb.</Text>
+            <Text style={{ fontSize: 12 }}>วงศ์ : Santalaceae</Text>
+          </View>
+        </View>
+        </Pressable>
+        <Pressable onPress={() => onPressItem(23, 'คนทา')}>
+        <View style={styles.row}>
+          <View style={{flex: 1}} >
+            <Image source={require('../img/img-23.jpg')} style={styles.image100} />
+          </View>
+          <View style={{flex: 2}} >
+            <Text style={{ fontSize: 14, fontWeight: 'bold' }}>คนทา</Text>
+            <Text style={{ fontSize: 14 }}>ชื่อวิทยาศาสตร์ : </Text>
+            <Text style={{ fontSize: 14, fontStyle: 'italic'  }}>Harrisonia perforata Merr.</Text>
+            <Text style={{ fontSize: 12 }}>วงศ์ : Simaroubaceae</Text>
+          </View>
+        </View>
+        </Pressable>
+        <Pressable onPress={() => onPressItem(24, 'กระเจียว')}>
+        <View style={styles.row}>
+          <View style={{flex: 1}} >
+            <Image source={require('../img/img-24.jpg')} style={styles.image100} />
+          </View>
+          <View style={{flex: 2}} >
+            <Text style={{ fontSize: 14, fontWeight: 'bold' }}>กระเจียว</Text>
+            <Text style={{ fontSize: 14 }}>ชื่อวิทยาศาสตร์ : </Text>
+            <Text style={{ fontSize: 14, fontStyle: 'italic'  }}>Curcuma angustifolia Roxb.</Text>
+            <Text style={{ fontSize: 12 }}>วงศ์ : Zingiberaceaea</Text>
+          </View>
+        </View>
+        </Pressable>
+        <Pressable onPress={() => onPressItem(25, 'กระเจียวขาว')}>
+        <View style={styles.row}>
+          <View style={{flex: 1}} >
+            <Image source={require('../img/img-25.jpg')} style={styles.image100} />
+          </View>
+          <View style={{flex: 2}} >
+            <Text style={{ fontSize: 14, fontWeight: 'bold' }}>กระเจียวขาว</Text>
+            <Text style={{ fontSize: 14 }}>ชื่อวิทยาศาสตร์ : </Text>
+            <Text style={{ fontSize: 14, fontStyle: 'italic'  }}>Curcuma parviflora Wall.</Text>
+            <Text style={{ fontSize: 12 }}>วงศ์ : Zingiberaceaea</Text>
+          </View>
+        </View>
+        </Pressable>
+        <Pressable onPress={() => onPressItem(26, 'เถาพันซ้าย')}>
+        <View style={styles.row}>
+          <View style={{flex: 1}} >
+            <Image source={require('../img/img-26.jpg')} style={styles.image100} />
+          </View>
+          <View style={{flex: 2}} >
+            <Text style={{ fontSize: 14, fontWeight: 'bold' }}>เถาพันซ้าย</Text>
+            <Text style={{ fontSize: 14 }}>ชื่อวิทยาศาสตร์ : </Text>
+            <Text style={{ fontSize: 14, fontStyle: 'italic'  }}>Spatholobus parviflorus (Roxb.ex DC.) Kuntze</Text>
+            <Text style={{ fontSize: 12 }}>วงศ์ : Fabaceae</Text>
+          </View>
+        </View>
+        </Pressable>
+        <Pressable onPress={() => onPressItem(27, 'ข้าวเย็นใต้')}>
+        <View style={styles.row}>
+          <View style={{flex: 1}} >
+            <Image source={require('../img/img-27.jpg')} style={styles.image100} />
+          </View>
+          <View style={{flex: 2}} >
+            <Text style={{ fontSize: 14, fontWeight: 'bold' }}>ข้าวเย็นใต้</Text>
+            <Text style={{ fontSize: 14 }}>ชื่อวิทยาศาสตร์ : </Text>
+            <Text style={{ fontSize: 14, fontStyle: 'italic'  }}>Premna herbacea Roxb.</Text>
+            <Text style={{ fontSize: 12 }}>วงศ์ : Fabaceae</Text>
           </View>
         </View>
         </Pressable>
@@ -312,18 +393,13 @@ const styles = StyleSheet.create({
   row: { 
     flexDirection: 'row', 
     height: 100, 
-    padding: 5, 
+    padding: 4, 
     width: "100%",
   },
   middle: {
     padding: 1,
       flex: 0.45,
       backgroundColor: '#ffffff',
-  },
-  grid: {
-    flexDirection: 'row', // เรียงรูปแนวนอน
-    flex: 0.25,
-    backgroundColor: '#0CA7FF',
   },
   bottom: {
       width: "100%",
